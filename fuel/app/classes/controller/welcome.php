@@ -20,10 +20,6 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		// Test de la BDD
-		
-		DB::query('SELECT "test"')->execute();
-	
 		return Response::forge(View::forge('welcome/index'));
 	}
 
